@@ -9,6 +9,14 @@ return new class extends Migration {
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('num_identification');
+            $table->string('name');
+            $table->string('last_name');
+            $table->string('email');
+            $table->string('age');
+            $table->date('birth_date');
+            $table->string('address');
+            $table->string('phone');
             $table->timestamps();
         });
     }
