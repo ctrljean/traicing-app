@@ -159,7 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        \Lifespikes\Employees\EmployeesServiceProvider::class,
         /*
          * Application Service Providers...
          */
