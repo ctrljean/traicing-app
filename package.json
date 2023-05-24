@@ -6,6 +6,7 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@types/node": "^20.2.3",
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.7.5",
         "vite": "^4.0.0"
@@ -19,6 +20,8 @@
         "@vitejs/plugin-react": "^4.0.0",
         "framer-motion": "^10.12.12",
         "prettier": "^2.8.8",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "typescript": "^5.0.4"
     }
 }

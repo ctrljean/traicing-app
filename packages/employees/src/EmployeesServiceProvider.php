@@ -15,6 +15,6 @@ class EmployeesServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        //
+
     }
 }

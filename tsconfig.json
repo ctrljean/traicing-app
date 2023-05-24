@@ -2,12 +2,7 @@
     "compilerOptions": {
         "composite": true,
         "useDefineForClassFields": true,
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext",
-            "es2015.symbol"
-        ],
+        "lib": ["DOM", "DOM.Iterable", "ESNext", "es2015.symbol"],
         "allowJs": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
@@ -20,16 +15,13 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "sourceMap": true,
-        "baseUrl": ".",
+        "baseUrl": "./",
         "target": "ES2021",
         "types": ["vite/client"],
-        "typeRoots": [
-            "node_modules/@types",
-            "resources/js/types"
-        ],
+        "typeRoots": ["node_modules/@types", "resources/js/types"],
         "paths": {
-            "@php-beam/*": ["./*"],
-            "@/generated": ["storage/app/types"]
+            "@/*": ["./packages/*"],
+            "@employees/*": ["packages/employees/*"]
         },
         "skipLibCheck": true
     },
