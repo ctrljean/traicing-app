@@ -1,9 +1,7 @@
-// import Home from "@/employees/resources/components/Home";
-// import Home from "@/employees/resources/components/Home";
+import Layout from "../../Shared/Layout";
+import {Table, TableContainer, Tbody, Td, Th, Thead, Tr} from "@chakra-ui/react";
 
-import Home from "@/employees/resources/components/Home";
+export default function Show({employees}) {
 
-export default function Show({user}) {
-    return <Home/>
 }
 

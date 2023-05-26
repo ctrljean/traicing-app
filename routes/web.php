@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Lifespikes\Employees\Models\Employee;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Employees/Show', [
-        'user' => 'jean'
+    return Inertia::render('Home/Index', [
+        'employees' => Employee::all()
     ]);
 });
