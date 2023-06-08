@@ -42,6 +42,8 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Lifespikes\\Employees\\": "packages/employees/src",
+            "Lifespikes\\Expenses\\": "packages/expenses/src",
+            "Lifespikes\\Pays\\": "packages/pays/src",
             "Lifespikes\\Reviews\\": "packages/reviews/src"
         }
     },
@@ -69,6 +71,8 @@
         "laravel": {
             "providers": [
                 "Lifespikes\\Reviews\\ReviewsServiceProvider",
+                "Lifespikes\\Pays\\PaysServiceProvider",
+                "Lifespikes\\Expenses\\ExpensesServiceProvider",
                 "Lifespikes\\Employees\\EmployeesServiceProvider"
             ]
         },
@@ -90,6 +94,8 @@
     },
     "replace": {
         "lifespikes/employees": "self.version",
+        "lifespikes/expenses": "self.version",
+        "lifespikes/pays": "self.version",
         "lifespikes/reviews": "self.version"
     },
     "minimum-stability": "stable",

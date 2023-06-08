@@ -1,13 +1,13 @@
 import {Box} from "@chakra-ui/react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 export default function Layout(props) {
     return <>
-        <Box bg='tomato' w='100%' p={4} color='white'>
-            Header
-        </Box>
+        <Header/>
+
         {props.children}
-        <Box bg='black' w='100%' p={4} color='white'>
-            Footer
-        </Box>
+
+        <Footer/>
     </>
 }

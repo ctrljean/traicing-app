@@ -160,6 +160,7 @@ return [
          * Package Service Providers...
          */
         \Lifespikes\Employees\EmployeesServiceProvider::class,
+        \Lifespikes\Reviews\ReviewsServiceProvider::class,
         /*
          * Application Service Providers...
          */

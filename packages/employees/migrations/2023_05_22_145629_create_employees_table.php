@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->string('num_identification');
+            $table->string('num_identification')->nullable();
             $table->string('name');
             $table->string('last_name');
             $table->string('email');
@@ -17,6 +17,8 @@ return new class extends Migration {
             $table->date('birth_date');
             $table->string('address');
             $table->string('phone');
+            $table->boolean('probationary')->default(true);
+            $table->boolean('hired')->default(false);
             $table->timestamps();
         });
     }

@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Lifespikes\Employees\Models\Employee;
+use Lifespikes\Reviews\Models\Reviews;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,6 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         Employee::factory()->count(10)->create();
+        Reviews::factory()->count(10)->create();
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',

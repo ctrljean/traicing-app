@@ -18,6 +18,8 @@ class EmployeeFactory extends Factory
             'birth_date' => fake()->unique()->date(),
             'address' => fake()->unique()->sentence(15),
             'phone' => fake()->unique()->phoneNumber(),
+            'probationary' => fake()->randomElement([true, false]),
+            'hired' => fake()->randomElement([true, false])
         ];
     }
 }
